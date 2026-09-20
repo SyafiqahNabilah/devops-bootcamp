@@ -1,0 +1,5 @@
+{
+    "UserId": "AIDA37X43O2F5UY23TNRQ",
+    "Account": "824090261131",
+    "Arn": "arn:aws:iam::824090261131:user/NotRootSyafiqah"
+}
