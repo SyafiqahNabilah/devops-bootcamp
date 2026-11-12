@@ -1,0 +1,1 @@
+github action. before ada cicd kita selalu deploy docker secara manual. Ulang setiap langkah berkali-kali setiap kali ada perubahan. Dengan guna github action setiap kali ada push ia akan berjalan automatically.
