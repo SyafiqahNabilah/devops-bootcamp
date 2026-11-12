@@ -48,4 +48,3 @@ module "my_server_private" {
 data "aws_ssm_parameter" "token" {
   name = "/devops-bootcamp-2026/tunnel-token"
 }
-
