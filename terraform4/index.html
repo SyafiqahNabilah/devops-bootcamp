@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Card — DevOps Bootcamp 2026</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: #eef2f7;
+      color: #1e293b;
+    }
+
+    /* Fade-in on page load */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Soft pulse for the badge */
+    @keyframes softPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(56, 189, 248, 0.45); }
+      50%      { box-shadow: 0 0 0 10px rgba(56, 189, 248, 0); }
+    }
+
+    .card {
+      width: min(360px, 100%);
+      padding: 32px 28px;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+      animation: fadeInUp 0.8s ease both;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.14);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #6366f1, #38bdf8);
+      animation: softPulse 2.8s ease-in-out infinite;
+    }
+
+    .avatar {
+      width: 84px;
+      height: 84px;
+      margin: 0 auto 18px;
+      display: grid;
+      place-items: center;
+      font-size: 32px;
+      font-weight: 700;
+      color: #ffffff;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #38bdf8);
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .cohort {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 14px;
+    }
+
+    .role {
+      display: inline-block;
+      padding: 8px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #4338ca;
+      background: #eef2ff;
+      border-radius: 999px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="badge">DevOps Bootcamp 2026</span>
+    <div class="avatar" aria-hidden="true">NA</div>
+    <h1>Syafiqah</h1>
+    <p class="cohort">Cohort 2026</p>
+    <p class="role">DevOps Engineer</p>
+  </main>
+</body>
+</html>
