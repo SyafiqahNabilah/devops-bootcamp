@@ -1,7 +1,2 @@
-output "server_ip_public" {
-  value = module.my_server_public.public_ip
-}
-
-output "ssm_command_public" {
-  value = "aws ssm start-session --target ${module.my_server_public.id}"
-}
+output "node1_ip" { value = module.node1.public_ip }
+output "node2_ip" { value = module.node2.public_ip }

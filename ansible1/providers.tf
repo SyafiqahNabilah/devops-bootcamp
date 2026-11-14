@@ -5,6 +5,10 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 6.0"
     }
+    local = {
+      source  = "hashicorp/local"
+      version = "~> 2.9"
+    }
   }
   backend "s3" {
     bucket       = "bootcamp-2026-syafiqah"
@@ -19,3 +23,4 @@ provider "aws" {
 }
 
 data "aws_caller_identity" "my_account" {}
+
